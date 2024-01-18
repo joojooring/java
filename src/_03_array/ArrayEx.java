@@ -126,7 +126,6 @@ public class ArrayEx {
                 for(int k=0; k < threeDimensionArr[i][j].length; k++){
                     System.out.print(threeDimensionArr[i][j][k]+" ");
                 }
-
                 System.out.println();
             }
             System.out.println();
@@ -186,5 +185,60 @@ public class ArrayEx {
         int[] unsortedArray = {5,3,4,2,1};
         Arrays.sort(unsortedArray);
         System.out.println("Sorted Array : " + Arrays.toString(unsortedArray));
-    }
+
+//    5. Arrays.equals(배열1, 배열2) : 두 배열의 각각의 요소 값이 동일한지 비교해서 true/false 반환
+        int[] array1 = {1,2,3};
+        int[] array2 = {1,2,3};
+        int[] array3 = {1,5,3};
+
+        boolean arraysEqual = Arrays.equals(array1,array2);
+        boolean arraysEqual2 = Arrays.equals(array1,array3);
+
+        System.out.println("111111" + arraysEqual);
+        System.out.println("다르니???"+ arraysEqual2);
+
+//        ==비교시 //주소값을 참조하기 때문에 내용이 같아도 false가 나오기때문에 equals를 이용해야 됨
+        System.out.println("Arrays == 1 : " + (array1 == array2));
+        System.out.println("Arrays == 2 : "+ (array1 == array3));
+
+
+//     6. Arrays.deepEquals (배열1, 배열2) : 다차원 비교시
+        int[][] deepArray1 = {{1,2}, {3,4}};
+        int[][] deepArray2 = {{1,2}, {3,4}};
+        int[][] deepArray3 = {{5,2}, {3,4}};
+
+        boolean deepArraysEqual = Arrays.deepEquals(deepArray1, deepArray2);
+        boolean deepArraysEqual2 = Arrays.deepEquals(deepArray1, deepArray3);
+
+
+        System.out.println("deepEquals 1 : "+deepArraysEqual);
+        System.out.println("deepEquals 2 : "+deepArraysEqual2);
+
+
+//        7. Array.binarySearch(배열, index) : 단, 배열은 정렬된 상태여야되니까 sort먼저!!
+//        : 배열의 특정 인덱스 요소값을 이진 검색 알고리즘을 사용하여 검색한 후 , 해당 위치 반환
+//                                             이진 검색 알고리즘을 사용하므로 매개변수로 전달되는 배열이 sort()등을 사용하여 미리 정렬되어 있어야만 제대로 동장
+
+        int[] sortedArray = {10, 30, 50 , 70 , 90};
+        int index = Arrays.binarySearch(sortedArray, 50);
+        System.out.println("binarySearch로 50이 몇번째인지? : "+ index);
+
+
+
+//        ////////////////////////////////////////////
+//        ArrayList
+//        - ArrayList클래스 : 표준 배열보다 느릴 수 있지만 배열에서 많은 조작이 필요시 유용하게 사용되는 클래스
+//        - 동적할당 : 크기를 미리 정하지 않아도 됨!, 크기 변할 수 있다는 말
+//        ArrayList<Integer같은 type> 변수명 = new ArrayList<>(); 동적할당이라서 크기를 안쓴거임
+
+//        ArrayList 메소드
+//        ArrayList.add(값) : 맨 뒤에 추가
+//        ArrayList.add(index, 값) : index 위치에 값이 추가됨
+//        ArrayList.addAll()
+//        ArrayList.size() : leghth랑 똑같은 역할 . ArrayList의 길이를 알려줌
+//        ArrayList.get(index) : index에 해당하는 요소 리턴
+//        ArrayList.indexOf(매개변수) : params와 같은 첫번째 요소의 index 리턴, 없으면 -1 리턴
+
+
+        }
     }

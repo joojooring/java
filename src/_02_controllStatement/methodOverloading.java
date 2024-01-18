@@ -6,7 +6,7 @@ package _02_controllStatement;
 public class methodOverloading {
     public static void main(String[] args) {
     //1. 객체 생성
-        methodOverloading ol = new methodOverloading();
+         methodOverloading ol = new methodOverloading();
 
 //  2. 객체의 메서드 사용
         System.out.println(ol.add(1,2));

@@ -39,15 +39,18 @@ public class Rectangle02 {
 
         while (true) {
             int width = scanner.nextInt();
-            if (width == 0) {
-                break;
-            }
-
             int height = scanner.nextInt();
+
+            if (width == 0 || height == 0) {
+                break;
+            } else {
+
 
             Rectangle02 rectangle = new Rectangle02(width);
             rectangle.setHeight(height);
             rects.add(rectangle);
+
+            }
 
         }
         scanner.close();
@@ -58,7 +61,7 @@ public class Rectangle02 {
             System.out.println("가로 길이: " + rect.getWidth());
             System.out.println("세로 길이: " + rect.getHeight());
             System.out.println("넓이: " + rect.area());
-            System.out.println();
+            System.out.println(" ---------------- ");
         }
     }
 }

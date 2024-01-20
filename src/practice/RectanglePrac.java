@@ -25,10 +25,14 @@ public class RectanglePrac {
 //    - main에서 사용자에게 입력받을 scanner 사용
 //    - Rectangle 객체 생성 : RectanglePrac test = new RectanglePrac();
 //    객체 생성 방법 : new 키워드 사용해서 , 클래스명 객체명 = new 클래스명();
+//    객체화한다. = 인스턴스화 = 클래스로부터 객체를 만든다.
+//    인스턴스? 클래스로부터 만들어진 객체
+//    =>> 클래스로 부터 여러 개의 인스턴스를 만들 수 있음
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println(" 사각형의 가로와 세로 길이를 띄어씌기 기준으로 입력해라");
+        System.out.println(" 사각형의 가로와 세로 길이를 띄어쓰기 기준으로 입력해라");
         int width = scanner.nextInt();
         int height = scanner.nextInt();
 

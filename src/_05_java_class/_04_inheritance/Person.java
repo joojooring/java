@@ -65,7 +65,7 @@ public class Person {
         this.age = age;
     }
 
-        public void say(){
+    public void say(){
         System.out.println("안녕!");
     }
 

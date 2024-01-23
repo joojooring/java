@@ -49,4 +49,14 @@ public class Student extends Person {
         System.out.println(campus + "캠퍼스에서 공부 중");
     }
 
+
+//    메소드 오버라이딩( @Override)
+//    - 부모 클래스의 메소드를 자식 클래스에서 재정의
+//    메소드 이름, 매개변수 타입 및 개수, 리턴 타입 등 모든 것 동일하게
+    @Override // 어노테이션이라고 하고 생략 가능!
+
+    public void say(){
+        System.out.println("오버라이드 됐니!!! 부모꺼 받지 말아라");
+    }
+
 }

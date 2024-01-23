@@ -14,6 +14,10 @@ public class Animal {
         this.age=age;
     }
 
+    public Animal() {
+
+    }
+
 
     public void makeSound(){
         System.out.println("동물은 소리를 낸다.");

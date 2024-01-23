@@ -15,4 +15,9 @@ public class Cat extends Animal{
         System.out.println(action+"고양이는 식빵을 굽지");
     }
 
+
+    @Override
+    public void makeSound(){
+        System.out.println("냐옹-");
+    }
 }

@@ -32,6 +32,8 @@ public class ClassPracAlone {
         ClassPracAlone rectangle = new ClassPracAlone(width, height);
         rectangle.area();
         System.out.println(rectangle.area());
+
+        scanner.close();
     }
 
 }

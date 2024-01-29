@@ -16,8 +16,8 @@ public class Test1 {
     public static void main(String[] args) {
         int [] nums1 = {2,5,8,3,7};
 
-        Arrays.sort(nums1);
-        System.out.println(Arrays.toString(nums1));
-        System.out.println(sumLessThan(nums1, 8 ));
+//        Arrays.sort(nums1);
+//        System.out.println(Arrays.toString(nums1));
+        System.out.println(sumLessThan(nums1, 3 ));
     }
 }
